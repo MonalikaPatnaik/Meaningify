@@ -1,9 +1,13 @@
 {
-    "name": "Real Time Word Meaning",
+    "name": "Meaningify",
     "version": "1.0.0",
     "description": "provides definition of the entered word",
     "manifest_version": 3,
     "author": "Monalika Patnaik",
+    "icons": {
+      
+        "128": "icon.png"
+      },
     "action":{
         "default_popup": "index.html",
         "default_title": "Meaningify"
