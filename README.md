@@ -15,5 +15,7 @@ Since, it's not been published in the chrome web store yet, so if u wan't to use
 
 ## How to use it
 In order to use it, you have to click the extension icon and a pop up appears, type the word and click **Find Meaning** button to see its meaning.
+![image](https://github.com/MonalikaPatnaik/Meaningify/assets/99353300/4035a7ea-0ffa-44a1-819b-f66ed2198104)
+
 
 The best part is, you can customize this extension on your system according to your own use😉
