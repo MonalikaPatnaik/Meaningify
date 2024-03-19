@@ -9,9 +9,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+let index=0;
 async function fetchMeaning(word){
     const res=await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`)
     const record=await res.json();
     const meanings = record[0].meanings;
-    document.getElementById('meaningDisplay').textContent = meanings[Math.floor(Math.random() * meanings.length)].definitions[0]?.definition;
+    if(meanings.length > 0) {
+    document.getElementById('meaningDisplay').textContent =meanings[index].definitions[0].definition;
+    index=(index+1)%meanings.length;
+    }
+    else{
+        document.getElementById('meaningDisplay').innerHTML= `<p style="color: red;">Error fetching meaning. Try again</p>` 
+    }
+
 }
